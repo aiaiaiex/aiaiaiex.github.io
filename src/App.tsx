@@ -1,7 +1,8 @@
 import { useState } from "react";
+
+import heroImg from "./assets/hero.png";
 import ReactLogo from "./assets/react.svg?react";
 import ViteLogo from "./assets/vite.svg?react";
-import heroImg from "./assets/hero.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,7 +11,7 @@ function App() {
     <>
       <section id="center">
         <div>
-          <img src={heroImg} width="170" height="179" alt="" />
+          <img alt="" height="179" src={heroImg} width="170" />
           <ReactLogo title="React logo" />
           <ViteLogo title="Vite logo" />
         </div>
@@ -20,7 +21,11 @@ function App() {
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          onClick={() => {
+            setCount((count) => count + 1);
+          }}
+        >
           Count is {count}
         </button>
       </section>
@@ -29,7 +34,7 @@ function App() {
 
       <section id="next-steps">
         <div id="docs">
-          <svg role="presentation" aria-hidden="true">
+          <svg aria-hidden="true" role="presentation">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
           <h2>Documentation</h2>
@@ -50,7 +55,7 @@ function App() {
           </ul>
         </div>
         <div id="social">
-          <svg role="presentation" aria-hidden="true">
+          <svg aria-hidden="true" role="presentation">
             <use href="/icons.svg#social-icon"></use>
           </svg>
           <h2>Connect with us</h2>
@@ -58,7 +63,7 @@ function App() {
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg role="presentation" aria-hidden="true">
+                <svg aria-hidden="true" role="presentation">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
@@ -66,7 +71,7 @@ function App() {
             </li>
             <li>
               <a href="https://chat.vite.dev/" target="_blank">
-                <svg role="presentation" aria-hidden="true">
+                <svg aria-hidden="true" role="presentation">
                   <use href="/icons.svg#discord-icon"></use>
                 </svg>
                 Discord
@@ -74,7 +79,7 @@ function App() {
             </li>
             <li>
               <a href="https://x.com/vite_js" target="_blank">
-                <svg role="presentation" aria-hidden="true">
+                <svg aria-hidden="true" role="presentation">
                   <use href="/icons.svg#x-icon"></use>
                 </svg>
                 X.com
@@ -82,7 +87,7 @@ function App() {
             </li>
             <li>
               <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg role="presentation" aria-hidden="true">
+                <svg aria-hidden="true" role="presentation">
                   <use href="/icons.svg#bluesky-icon"></use>
                 </svg>
                 Bluesky
