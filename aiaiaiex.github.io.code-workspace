@@ -14,10 +14,18 @@
         "source.sortImports": "explicit",
       },
     },
+    "[typescriptreact]": {
+      "editor.quickSuggestions": {
+        "strings": "on",
+      },
+    },
     "[typescript][typescriptreact]": {
       "editor.codeActionsOnSave": {
         "source.addMissingImports.ts": "explicit",
       },
+    },
+    "files.associations": {
+      "*.css": "tailwindcss",
     },
   },
   "extensions": {
