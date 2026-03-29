@@ -1,6 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
+import ReactLogo from "./assets/react.svg?react";
+import ViteLogo from "./assets/vite.svg?react";
 import heroImg from "./assets/hero.png";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <section id="center">
         <div>
           <img src={heroImg} width="170" height="179" alt="" />
-          <img src={reactLogo} alt="React logo" />
-          <img src={viteLogo} alt="Vite logo" />
+          <ReactLogo title="React logo" />
+          <ViteLogo title="Vite logo" />
         </div>
         <div>
           <h1>Get started</h1>
@@ -37,13 +37,13 @@ function App() {
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank">
-                <img src={viteLogo} alt="" />
+                <ViteLogo title="" />
                 Explore Vite
               </a>
             </li>
             <li>
               <a href="https://react.dev/" target="_blank">
-                <img src={reactLogo} alt="" />
+                <ReactLogo title="" />
                 Learn more
               </a>
             </li>
