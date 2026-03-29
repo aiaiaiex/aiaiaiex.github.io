@@ -28,6 +28,9 @@
     "files.associations": {
       "*.css": "tailwindcss",
     },
+    "files.readonlyInclude": {
+      "**/package-lock.json": true,
+    },
   },
   "extensions": {
     "recommendations": [
