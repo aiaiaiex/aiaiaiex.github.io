@@ -9,6 +9,11 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.formatOnSave": true,
     },
+    "[javascript]": {
+      "editor.codeActionsOnSave": {
+        "source.sortImports": "explicit",
+      },
+    },
   },
   "extensions": {
     "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
