@@ -22,6 +22,7 @@
     "[typescript][typescriptreact]": {
       "editor.codeActionsOnSave": {
         "source.addMissingImports.ts": "explicit",
+        "source.fixAll.eslint": "explicit",
       },
     },
     "files.associations": {
