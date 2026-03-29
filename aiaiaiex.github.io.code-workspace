@@ -14,6 +14,11 @@
         "source.sortImports": "explicit",
       },
     },
+    "[typescript][typescriptreact]": {
+      "editor.codeActionsOnSave": {
+        "source.addMissingImports.ts": "explicit",
+      },
+    },
   },
   "extensions": {
     "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
