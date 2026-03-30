@@ -8,6 +8,8 @@ import ReactDOM from "react-dom/client";
 
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
+// Import CSS
+import "./index.css";
 
 const hashHistory = createHashHistory();
 
