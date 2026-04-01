@@ -6,9 +6,17 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div>
-      <span>Hello, I'm CJ.</span>
-      <span>A full-stack web developer who loves learning and coding.</span>
+    <div className="flex grow flex-col items-center justify-center gap-y-8 p-16">
+      <span className="text-center text-9xl font-black">
+        Hello, I'm <span className="text-red-700">CJ</span>.
+      </span>
+      <span className="text-center text-5xl font-medium">
+        A{" "}
+        <span className="font-bold text-blue-700">
+          full-stack web developer
+        </span>{" "}
+        who loves learning and coding.
+      </span>
     </div>
   );
 }
