@@ -18,7 +18,7 @@ function RouteComponent() {
 
       <div className="flex flex-wrap justify-center gap-8">
         <a
-          className="group flex flex-col items-center rounded-2xl border-2 border-blue-700 p-4 hover:bg-blue-700"
+          className="group flex flex-col items-center rounded-2xl p-4 shadow shadow-gray-400 hover:bg-blue-700"
           href="mailto:carlosjose.ysais@gmail.com"
         >
           <MailBoxOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
@@ -28,7 +28,7 @@ function RouteComponent() {
         </a>
 
         <a
-          className="group flex flex-col items-center rounded-2xl border-2 border-blue-700 p-4 hover:bg-blue-700"
+          className="group flex flex-col items-center rounded-2xl p-4 shadow shadow-gray-400 hover:bg-blue-700"
           href="sms:+639764762171"
         >
           <PhoneOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
@@ -38,7 +38,7 @@ function RouteComponent() {
         </a>
 
         <a
-          className="group flex flex-col items-center rounded-2xl border-2 border-blue-700 p-4 hover:bg-blue-700"
+          className="group flex flex-col items-center rounded-2xl p-4 shadow shadow-gray-400 hover:bg-blue-700"
           href="https://www.linkedin.com/in/carlos-jose-ysais/"
           rel="noopener noreferrer"
           target="_blank"

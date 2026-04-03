@@ -11,7 +11,7 @@ function RouteComponent() {
     <div className="flex grow flex-col items-center justify-center gap-y-8 p-8 sm:p-16 md:flex-row md:gap-x-8 md:gap-y-0">
       <img
         alt="Profile picture"
-        className="size-56 rounded-full border border-gray-400 sm:size-64"
+        className="size-56 rounded-full shadow shadow-gray-400 sm:size-64"
         src={profilePicture}
       />
       <div className="flex flex-col items-start gap-y-4">
