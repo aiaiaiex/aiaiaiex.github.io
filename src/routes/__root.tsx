@@ -1,7 +1,7 @@
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-const RootLayout = () => (
+const RouteComponent = () => (
   <>
     <div className="flex min-h-screen flex-col justify-between bg-gray-100">
       <div className="flex h-16 grow-0 flex-row items-center justify-evenly bg-blue-700">
@@ -39,4 +39,4 @@ const RootLayout = () => (
   </>
 );
 
-export const Route = createRootRoute({ component: RootLayout });
+export const Route = createRootRoute({ component: RouteComponent });
