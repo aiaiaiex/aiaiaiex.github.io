@@ -10,19 +10,19 @@ export const Route = createFileRoute("/contact/")({
 
 function RouteComponent() {
   return (
-    <div className="flex grow flex-col items-center justify-center gap-y-8 p-16">
-      <span className="text-center text-4xl font-black">
+    <div className="flex grow flex-col items-center justify-center gap-y-8 p-8 sm:p-16">
+      <span className="text-center text-3xl font-black sm:text-4xl">
         Want to work together? Reach me through my{" "}
         <span className="text-red-700">contact details</span> below.
       </span>
 
-      <div className="grid grid-cols-3 gap-x-8">
+      <div className="flex flex-wrap justify-center gap-8">
         <a
           className="group flex flex-col items-center rounded-2xl border-2 border-blue-700 p-4 hover:bg-blue-700"
           href="mailto:carlosjose.ysais@gmail.com"
         >
-          <MailBoxOutline className="size-32 text-blue-700 group-hover:text-white" />
-          <span className="text-2xl font-bold text-blue-700 group-hover:text-white">
+          <MailBoxOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             Email
           </span>
         </a>
@@ -31,8 +31,8 @@ function RouteComponent() {
           className="group flex flex-col items-center rounded-2xl border-2 border-blue-700 p-4 hover:bg-blue-700"
           href="sms:+639764762171"
         >
-          <PhoneOutline className="size-32 text-blue-700 group-hover:text-white" />
-          <span className="text-2xl font-bold text-blue-700 group-hover:text-white">
+          <PhoneOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             SMS
           </span>
         </a>
@@ -43,8 +43,8 @@ function RouteComponent() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <LinkedInSolid className="size-32 text-blue-700 group-hover:text-white" />
-          <span className="text-2xl font-bold text-blue-700 group-hover:text-white">
+          <LinkedInSolid className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             LinkedIn
           </span>
         </a>
