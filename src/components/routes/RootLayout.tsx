@@ -3,7 +3,7 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 import { windowScrollToTop } from "../../utils/windowUtils";
 
-function Root() {
+function RootLayout() {
   return (
     <>
       <div className="flex min-h-screen flex-col justify-between bg-gray-100">
@@ -47,4 +47,4 @@ function Root() {
   );
 }
 
-export default Root;
+export default RootLayout;
