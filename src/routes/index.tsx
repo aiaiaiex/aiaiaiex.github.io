@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: RouteComponent,
 });
 
-function Index() {
+function RouteComponent() {
   return (
     <div className="flex grow flex-col items-center justify-center gap-y-8 p-8 sm:p-16">
       <span className="text-center text-8xl font-black sm:text-9xl">
