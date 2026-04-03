@@ -1,6 +1,8 @@
 import { Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
+import { windowScrollToTop } from "../../utils/windowUtils";
+
 function Root() {
   return (
     <>
@@ -8,24 +10,28 @@ function Root() {
         <div className="sticky top-0 flex h-16 grow-0 flex-row items-center justify-evenly bg-blue-700">
           <Link
             className="text-xl text-white sm:text-2xl [&.active]:font-black"
+            onClick={windowScrollToTop}
             to="/"
           >
             Home
           </Link>
           <Link
             className="text-xl text-white sm:text-2xl [&.active]:font-black"
+            onClick={windowScrollToTop}
             to="/about"
           >
             About
           </Link>
           <Link
             className="text-xl text-white sm:text-2xl [&.active]:font-black"
+            onClick={windowScrollToTop}
             to="/projects"
           >
             Projects
           </Link>
           <Link
             className="text-xl text-white sm:text-2xl [&.active]:font-black"
+            onClick={windowScrollToTop}
             to="/contact"
           >
             Contact
