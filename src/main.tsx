@@ -14,7 +14,11 @@ import "./index.css";
 const hashHistory = createHashHistory();
 
 // Create a new router instance
-const router = createRouter({ history: hashHistory, routeTree });
+const router = createRouter({
+  history: hashHistory,
+  routeTree,
+  scrollRestoration: true,
+});
 
 // Register the router instance for type safety
 declare module "@tanstack/react-router" {
