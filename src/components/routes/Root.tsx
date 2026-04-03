@@ -33,7 +33,7 @@ function Root() {
         </div>
         <Outlet />
         <div className="flex max-h-min grow-0 flex-row justify-center text-xl font-extralight sm:text-2xl">
-          <span>&copy; 2026 Carlos Jose Ysais</span>
+          <span>&copy; {new Date().getFullYear()} Carlos Jose Ysais</span>
         </div>
       </div>
       <TanStackRouterDevtools />
