@@ -20,7 +20,7 @@ function LazyImage({ alt, className, src }: LazyImageProps) {
       <Fallback
         className={
           !imageLoaded
-            ? "absolute animate-pulse text-center font-black text-red-700"
+            ? "absolute animate-pulse text-center font-black break-all text-red-700"
             : "hidden"
         }
         overrideClassName={true}
