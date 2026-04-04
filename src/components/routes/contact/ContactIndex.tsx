@@ -1,6 +1,16 @@
-import LinkedInSolid from "../../../assets/svg/linkedin-solid.svg?react";
-import MailBoxOutline from "../../../assets/svg/mail-box-outline.svg?react";
-import PhoneOutline from "../../../assets/svg/phone-outline.svg?react";
+import { lazy, Suspense } from "react";
+
+import Fallback from "../../Fallback";
+
+const LazyLinkedInSolid = lazy(() => {
+  return import("../../../assets/svg/linkedin-solid.svg?react");
+});
+const LazyMailBoxOutline = lazy(() => {
+  return import("../../../assets/svg/mail-box-outline.svg?react");
+});
+const LazyPhoneOutline = lazy(() => {
+  return import("../../../assets/svg/phone-outline.svg?react");
+});
 
 function ContactIndex() {
   return (
@@ -15,7 +25,9 @@ function ContactIndex() {
           className="group flex flex-col items-center rounded-2xl p-4 shadow shadow-gray-400 hover:bg-blue-700"
           href="mailto:carlosjose.ysais@gmail.com"
         >
-          <MailBoxOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <Suspense fallback={<Fallback className="size-24 sm:size-32" />}>
+            <LazyMailBoxOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          </Suspense>
           <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             Email
           </span>
@@ -25,7 +37,9 @@ function ContactIndex() {
           className="group flex flex-col items-center rounded-2xl p-4 shadow shadow-gray-400 hover:bg-blue-700"
           href="sms:+639764762171"
         >
-          <PhoneOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <Suspense fallback={<Fallback className="size-24 sm:size-32" />}>
+            <LazyPhoneOutline className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          </Suspense>
           <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             SMS
           </span>
@@ -37,7 +51,9 @@ function ContactIndex() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <LinkedInSolid className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          <Suspense fallback={<Fallback className="size-24 sm:size-32" />}>
+            <LazyLinkedInSolid className="size-24 text-blue-700 group-hover:text-white sm:size-32" />
+          </Suspense>
           <span className="text-xl font-bold text-blue-700 group-hover:text-white sm:text-2xl">
             LinkedIn
           </span>
