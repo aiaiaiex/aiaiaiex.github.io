@@ -1,13 +1,26 @@
+import { lazy, Suspense } from "react";
+
 import profilePicture from "../../../assets/jpg/profile-picture.jpg";
+import Fallback from "../../Fallback";
+
+const LazyLazyImage = lazy(() => {
+  return import("../../LazyImage");
+});
 
 function AboutIndex() {
   return (
     <div className="flex grow flex-col items-center justify-center gap-y-8 p-8 sm:p-16 md:flex-row md:gap-x-8 md:gap-y-0">
-      <img
-        alt="Profile picture"
-        className="size-56 rounded-full shadow shadow-gray-400 sm:size-64"
-        src={profilePicture}
-      />
+      <Suspense
+        fallback={
+          <Fallback className="size-56 min-h-56 min-w-56 sm:size-64 sm:min-h-64 sm:min-w-64" />
+        }
+      >
+        <LazyLazyImage
+          alt="Profile picture"
+          className="size-56 min-h-56 min-w-56 rounded-full object-cover shadow shadow-gray-400 sm:size-64 sm:min-h-64 sm:min-w-64"
+          src={profilePicture}
+        />
+      </Suspense>
       <div className="flex flex-col items-start gap-y-4">
         <span className="text-3xl font-black sm:text-4xl">
           <span className="text-red-700">C</span>arlos{" "}
