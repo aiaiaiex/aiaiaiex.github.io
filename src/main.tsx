@@ -6,16 +6,16 @@ import {
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
-// Import CSS
+// Import CSS.
 import "./index.css";
-// Import default pending component
+// Import default pending component.
 import Pending from "./components/Pending";
-// Import the generated route tree
+// Import the generated route tree.
 import { routeTree } from "./routeTree.gen";
 
 const hashHistory = createHashHistory();
 
-// Create a new router instance
+// Create a new router instance.
 const router = createRouter({
   defaultPendingComponent: Pending,
   defaultPreload: "intent",
@@ -24,14 +24,14 @@ const router = createRouter({
   scrollRestoration: true,
 });
 
-// Register the router instance for type safety
+// Register the router instance for type safety.
 declare module "@tanstack/react-router" {
   interface Register {
     router: typeof router;
   }
 }
 
-// Render the app
+// Render the app.
 const rootElement = document.getElementById("root");
 if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
