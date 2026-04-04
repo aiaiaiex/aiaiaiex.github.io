@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DAs1UGHr.js";var t=e();function n({className:e,overrideClassName:n=!1}){return(0,t.jsx)(`span`,{className:n?e:`${e} animate-pulse content-center text-center font-black text-red-700`,children:`Loading...`})}export{n as t};
