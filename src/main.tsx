@@ -15,6 +15,7 @@ const hashHistory = createHashHistory();
 
 // Create a new router instance
 const router = createRouter({
+  defaultPreload: "intent",
   history: hashHistory,
   routeTree,
   scrollRestoration: true,
