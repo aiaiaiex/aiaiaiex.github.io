@@ -6,15 +6,18 @@ import {
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
-// Import the generated route tree
-import { routeTree } from "./routeTree.gen";
 // Import CSS
 import "./index.css";
+// Import default pending component
+import Pending from "./components/Pending";
+// Import the generated route tree
+import { routeTree } from "./routeTree.gen";
 
 const hashHistory = createHashHistory();
 
 // Create a new router instance
 const router = createRouter({
+  defaultPendingComponent: Pending,
   defaultPreload: "intent",
   history: hashHistory,
   routeTree,
