@@ -10,7 +10,7 @@ function Fallback({ className, overrideClassName = false }: FallbackProps) {
       className={
         overrideClassName
           ? className
-          : `${className} flex animate-pulse items-center justify-center text-center font-black text-red-700`
+          : `${className} animate-pulse content-center text-center font-black text-red-700`
       }
     >
       Loading...
