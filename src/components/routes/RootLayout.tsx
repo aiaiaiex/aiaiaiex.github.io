@@ -38,8 +38,10 @@ function RootLayout() {
           </Link>
         </div>
         <Outlet />
-        <div className="flex max-h-min grow-0 flex-row justify-center text-xl font-extralight sm:text-2xl">
-          <span>&copy; {new Date().getFullYear()} Carlos Jose Ysais</span>
+        <div className="flex max-h-min grow-0 flex-row items-center justify-center">
+          <span className="text-xl font-extralight sm:text-2xl">
+            &copy; {new Date().getFullYear()} Carlos Jose Ysais
+          </span>
         </div>
       </div>
       <TanStackRouterDevtools />
