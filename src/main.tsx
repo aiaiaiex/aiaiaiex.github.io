@@ -7,7 +7,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
 // Import CSS.
-import "./index.css";
+import "./main.css";
 // Import default pending component.
 import Pending from "./components/Pending";
 // Import the generated route tree.
