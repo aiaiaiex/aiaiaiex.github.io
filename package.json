@@ -11,8 +11,7 @@
     "format": "prettier . --write",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages --dist dist",
-    "build-tailwind-css": "@tailwindcss --input ./index-tailwind-input.css --output ./index-tailwind-output.css --watch --minify"
+    "deploy": "gh-pages --dist dist"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
