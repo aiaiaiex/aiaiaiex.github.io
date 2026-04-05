@@ -27,9 +27,9 @@ function AboutIndex() {
           <span className="text-red-700">J</span>ose Ysais
         </span>
         <span className="text-xl font-medium sm:text-2xl">
-          Ever since I encountered Python accidentally by clicking a YouTube
+          Ever since I encountered Python accidentally by clicking on a YouTube
           video with a snake thumbnail, I knew I found my profession. I started
-          by learning from free resources online created by genereous developers
+          by learning from free resources online created by generous developers
           and{" "}
           <span className="font-bold text-blue-700">
             I never stopped learning
